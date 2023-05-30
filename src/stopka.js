@@ -1,5 +1,5 @@
 import React from 'react';
-import { useRef } from 'react'
+
 
 import {Link} from "react-router-dom"
 
@@ -12,29 +12,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const Stopka = () => {
-  const formRef = useRef(null)
-    const onSubmit = (e) => { 
-        e.preventDefault()
-        const pytanie = formRef.current.pytanie.value 
-        
-
-        fetch("./pytania/posts",{
-            method:"POST",
-            body:JSON.stringify({pytanie}),
-            headers: {
-                'Content-Type':'application/json'
-            }
-                
-        }).then((res) =>{ return res.json()}).then(
-            (res)=>{
-                console.log(res)
-            }
-        )
-
-        window.location.reload();
-    } 
-
-
 
     return (
       <Container fluid className='stopka'>
@@ -63,7 +40,7 @@ const Stopka = () => {
     </Col>
     <Col className='kol col-sm-12 col-md-12 col-lg-3'>
       <h2 class="naglowki">MASZ PYTANIA?</h2>
-      <form id="pytnie_form" onSubmit={onSubmit} ref={formRef} acceptCharset="UTF-8">
+      <form id="pytnie_form" netlify>
 
       <input type="text" class="tekst" id="pytanie" placeholder="Wprowadź tekst" />
       <button type="submit" class="wyslij">Wyślij</button>

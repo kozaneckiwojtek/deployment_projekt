@@ -1,47 +1,11 @@
-import { useRef } from 'react'
+import React from 'react'
 import './css/form_style.css'
 const Form = () => {
-    const formRef = useRef(null)
-    const onSubmit = (e) => {
-        e.preventDefault()
-        const name = formRef.current.name.value
-        const nazwisko = formRef.current.nazwisko.value
-        const email = formRef.current.email.value
-        const tel = formRef.current.nr_tel.value
-        const ulica = formRef.current.ulica.value
-        const dom = formRef.current.nr_domu.value
-        const kod = formRef.current.kod.value
-        const miasto = formRef.current.miasto.value
-        const rok = formRef.current.rok.value
-        const uczelnia = formRef.current.uczelnia.value
-        const kierunek = formRef.current.kierunek.value
-        const rok_studow = formRef.current.rok_studow.value
-        const temat = formRef.current.temat.value
-        const poziom = formRef.current.poziom.value
-        const termin = formRef.current.termin.value
-        const nocleg = formRef.current.nocleg.value
-
-
-        fetch("http://localhost:5555/posts", {
-            method: "POST",
-            body: JSON.stringify({ name, nazwisko, email, tel, ulica, dom, kod, miasto, rok, uczelnia, kierunek, rok_studow, temat, poziom, termin, nocleg }),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-
-        }).then((res) => { return res.json() }).then(
-            (res) => {
-                console.log(res)
-            }
-        )
-
-        window.location.reload();
-    }
     return (
 
         <div>
 
-            <form id="form" onSubmit={onSubmit} ref={formRef} acceptCharset="UTF-8">
+            <form id="form" netlify>
                 <h1><strong>Formularz rejestracyjny na szkołę letnią</strong></h1>
 
                 <input type="text" class="wejscie" id="name" pattern="[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]{0,20}" placeholder="Imię" required={true} aria-label="Wpisz swoje imię" data-validation-required-message="Podaj swoje imię" />
