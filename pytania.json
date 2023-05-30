@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "pytanie": "Czy mogę zabrać ze sobą kota?",
+      "id": 1
+    },
+    {
+      "pytanie": "Czy mogę mieć pokój z kolegą Marcinem?",
+      "id": 2
+    },
+    {
+      "pytanie": "test",
+      "id": 3
+    }
+  ]
+}

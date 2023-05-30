@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "name": "Wojciech",
+      "nazwisko": "Kozanecki",
+      "email": "kozaneckiwojtek@gmail.com",
+      "tel": "500660030",
+      "ulica": "Wańkowicza",
+      "dom": "52/11",
+      "kod": "09-410",
+      "miasto": "Płock",
+      "rok": "2002",
+      "uczelnia": "Politechnika łódzka",
+      "kierunek": "Informatyka",
+      "rok_studow": "Rok 1",
+      "temat": "Kurs Programowania",
+      "poziom": "B1",
+      "termin": "30 czerwca - 14 lipca",
+      "nocleg": "NIE",
+      "id": 1
+    },
+    {
+      "name": "Miłosz",
+      "nazwisko": "Borczyński",
+      "email": "milosz.borczynski12@gmail.com",
+      "tel": "690107989",
+      "ulica": "Nasiegniewo",
+      "dom": "38a",
+      "kod": "87-811",
+      "miasto": "Fabianki",
+      "rok": "2003",
+      "uczelnia": "Politechnika Łódzka",
+      "kierunek": "Informatyka",
+      "rok_studow": "Rok 1",
+      "temat": "Kurs Programowania",
+      "poziom": "B2",
+      "termin": "17 lipca - 31 lipca",
+      "nocleg": "TAK",
+      "id": 2
+    }
+  ]
+}
